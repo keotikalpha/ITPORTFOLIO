@@ -8,8 +8,19 @@
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
         .whatsapp-button {
             position: fixed;
             top: 20px; /* Position it from the top */
@@ -29,14 +40,13 @@
             color: white;
             text-decoration: none;
         }
-    </style>
-
-    <style>
+        
+        /* Mobile and Desktop Responsive Styling */
         .map-container {
             position: relative;
             width: 100%;
-            height: 100vh; /* Full viewport height */
-            margin-top: 30px;
+            height: 300px; /* Adjust height for better mobile view */
+            margin-top: 20px;
         }
     
         #googleMap {
@@ -44,8 +54,102 @@
             height: 100%;
             border: none;
         }
+
+        header {
+            background: #333;
+            color: #fff;
+        }
+        .header-area {
+            padding: 10px 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu_icon {
+            display: none;
+        }
+        
+        /* Responsive Design */
+        .FirstElement, .about-area, .certifications-content, .badges-content, .education-content, .project-content, .services-area, .contact-content {
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .header-area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+            }
+            .navbar.active {
+                display: flex;
+            }
+            .menu_icon {
+                display: block;
+                cursor: pointer;
+            }
+            .menu_icon i {
+                font-size: 24px;
+            }
+            .map-container {
+                height: 250px; /* Adjust height for mobile view */
+            }
+        }
+
+        /* General Styles */
+        .profile-photo img, .certification-item img, .badge-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-group a {
+            margin: 5px;
+            display: inline-block;
+        }
+        .contact-content form input, .contact-content form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .contact-content form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
-    
 </head> 
 
 <body>
