@@ -10,17 +10,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        
         .whatsapp-button {
             position: fixed;
             top: 20px; /* Position it from the top */
@@ -40,13 +29,13 @@
             color: white;
             text-decoration: none;
         }
-        
-        /* Mobile and Desktop Responsive Styling */
+    </style>
+    <style>
         .map-container {
             position: relative;
             width: 100%;
-            height: 300px; /* Adjust height for better mobile view */
-            margin-top: 20px;
+            height: 100vh; /* Full viewport height */
+            margin-top: 30px;
         }
     
         #googleMap {
@@ -54,102 +43,8 @@
             height: 100%;
             border: none;
         }
-
-        header {
-            background: #333;
-            color: #fff;
-        }
-        .header-area {
-            padding: 10px 0;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-        .logo img {
-            height: 50px;
-        }
-        .navbar {
-            list-style: none;
-            display: flex;
-        }
-        .navbar li {
-            margin: 0 10px;
-        }
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .menu_icon {
-            display: none;
-        }
-        
-        /* Responsive Design */
-        .FirstElement, .about-area, .certifications-content, .badges-content, .education-content, .project-content, .services-area, .contact-content {
-            padding: 20px;
-            margin: 0 auto;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            .header-area {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar {
-                flex-direction: column;
-                display: none;
-                width: 100%;
-            }
-            .navbar.active {
-                display: flex;
-            }
-            .menu_icon {
-                display: block;
-                cursor: pointer;
-            }
-            .menu_icon i {
-                font-size: 24px;
-            }
-            .map-container {
-                height: 250px; /* Adjust height for mobile view */
-            }
-        }
-
-        /* General Styles */
-        .profile-photo img, .certification-item img, .badge-item img {
-            max-width: 100%;
-            height: auto;
-        }
-        .btn-group a {
-            margin: 5px;
-            display: inline-block;
-        }
-        .contact-content form input, .contact-content form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-        .contact-content form input[type="submit"] {
-            background: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
     </style>
+    
 </head> 
 
 <body>
@@ -158,14 +53,13 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-
     <!-------------------------- Header Area -------------------------->
     <header class="header-area">
         <div class="container">
             <div class="header">
                
                 <a href="" class="logo">
-                    <img src="files\expert2.png" alt="" class="signature">
+                    <img src="files/signaturecroppe.png" alt="" class="signature">
                     <i class="fa fa-bolt"></i>
                 </a>
                    
@@ -186,7 +80,7 @@
             </div>
         </div> 
     </header>
- 
+
     <!-------------------------- Home Page -------------------------->
     <div class="FirstElement" id="home">
         <div class="profile-photo">
@@ -512,11 +406,11 @@
                 </form>
                 <span id="msg"></span>
             </div>
-        </div>
-                    <div class="map-container">
+            <div class="map-container">
                 <!-- Google Maps Embed -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.022921376683!2d36.969061574724236!3d-1.1440915988449483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4750ae327fa5%3A0x867cd1acca17aea3!2sTop%20Height%20Apartment!5e0!3m2!1sen!2ske!4v1723228382089!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
     </section>
         
     <!-------------------------- JS -------------------------->
@@ -589,7 +483,7 @@
     <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
    </footer>
    <script src="script.js"></script>
-          <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
